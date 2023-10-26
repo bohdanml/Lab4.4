@@ -24,13 +24,13 @@ int main()
 
 	while (x <= xk) {
 	if (x <= -R1)
-		y = (((R1 + 2) / (-R1)) * x - 2);
+		y = ((x + 2) * (-R1))/(2-R1);
 		//2
 	else if (-R1 < x && x <= 0)
-			y = R1 - sqrt(pow(R1, 2) - pow(x, 2));
+			y = sqrt(pow(R1, 2) - pow(x, 2)) - R1;
 			//3
 		else if (0 < x && x <= R2)
-				y = sqrt(pow(R2, 2) - pow(x - R2, 2));
+				y = sqrt(pow(R2, 2) - pow(x, 2)) + R2;
 				//4
 			else if (R2 < x && x <= 4)
 					y = -R1;
